@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agricultural Shop - Contact</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: #f0f7ed;
+        }
+
+        header {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #174d27;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: lightgreen;
+            color: darkgreen;
+            border-radius: 8px;
+        }
+
+        .page {
+            background-color: white;
+            padding: 40px;
+            margin: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .page h2 {
+            color: darkgreen;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .page img {
+            width: 80%;
+            max-width: 600px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-box {
+            background-color: #e0f0d9;
+            padding: 25px;
+            border-radius: 12px;
+            flex: 1 1 200px;
+            transition: 0.3s;
+        }
+
+        .contact-box:hover {
+            background-color: lightgreen;
+            transform: scale(1.03);
+        }
+
+        .contact-box h3 {
+            color: darkgreen;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .contact-box a {
+            color: darkgreen;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #174d27;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                gap: 10px;
+            }
+
+            .page {
+                padding: 20px;
+            }
+
+            .page img {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Green Life Agricultural Shop</h1>
+        <p>We Are Happy to Help You!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="page">
+
+        <h2>Contact Us</h2>
+
+        <img
+            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"
+            alt="Green Agricultural Farm">
+
+        <div class="contact-container">
+
+            <div class="contact-box">
+
+                <h3>Email Address</h3>
+
+                <p>
+                    <a href="mailto:greenlifeshop@gmail.com">
+                        greenlifeshop@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="contact-box">
+
+                <h3>Phone Number</h3>
+
+                <p>
+                    <a href="tel:9876543210">
+                        9876543210
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="contact-box">
+
+                <h3>Our Address</h3>
+
+                <p>Trichy, Tamil Nadu</p>
+
+            </div>
+
+            <div class="contact-box">
+
+                <h3>Working Hours</h3>
+
+                <p>Monday to Saturday</p>
+
+                <p>9:00 AM to 6:00 PM</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Copyright © 2026 Green Life Agricultural Shop</p>
+    </footer>
+
+</body>
+</html>

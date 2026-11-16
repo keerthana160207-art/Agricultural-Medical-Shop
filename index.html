@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agricultural Medical Shop - Home</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: #f0f7ed;
+        }
+
+        header {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #174d27;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: lightgreen;
+            color: darkgreen;
+            border-radius: 8px;
+        }
+
+        .home {
+            background-color: #d9edcc;
+            text-align: center;
+            padding: 50px;
+            margin: 25px;
+            border-radius: 15px;
+        }
+
+        .home h2 {
+            color: darkgreen;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+
+        .home img {
+            width: 80%;
+            max-width: 650px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: darkgreen;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            background-color: limegreen;
+            color: black;
+        }
+
+        footer {
+            background-color: #174d27;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                gap: 10px;
+            }
+
+            .home {
+                padding: 25px;
+            }
+
+            .home img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Green Life Agricultural Shop</h1>
+        <p>Healthy Crops, Happy Farmers!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="home">
+
+        <h2>Welcome to Green Life Agricultural Shop</h2>
+
+        <img src = "https://static.vecteezy.com/system/resources/thumbnails/037/982/105/small_2x/ai-generated-aerial-view-captures-large-lush-green-field-with-crops-planted-in-straight-parallel-lines-the-field-is-vibrant-and-well-maintained-indicating-healthy-crop-growth-ai-generated-free-photo.jpg"
+          height = "200px" width="200px"
+          >
+        <img src="https://i.pinimg.com/originals/76/ba/9d/76ba9d7f368379e839faa110653a0c2c.jpg" height ="200px">
+        <img src = "https://wallpaperaccess.com/full/488949.jpg">
+        <p>
+            We provide quality agricultural products
+            for farmers.
+        </p>
+
+        <p>
+            Find seeds, fertilizers, crop-care products
+            and farming essentials at our shop.
+        </p>
+
+        <a href="products.html" class="btn">
+            Explore Products
+        </a>
+
+    </section>
+
+    <footer>
+        <p>Copyright © 2026 Green Life Agricultural Shop</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agricultural Shop - Products</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: #f0f7ed;
+        }
+
+        header {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #174d27;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: lightgreen;
+            color: darkgreen;
+            border-radius: 8px;
+        }
+
+        .page {
+            background-color: white;
+            padding: 40px;
+            margin: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .page h2 {
+            color: darkgreen;
+            margin-bottom: 25px;
+        }
+
+        /* Product Grid */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            background-color: #e5f3df;
+            padding: 20px;
+            border: 2px solid #b5d5a8;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .product img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            color: darkgreen;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            margin-bottom: 10px;
+        }
+
+        .product:hover {
+            background-color: lightgreen;
+            transform: scale(1.04);
+        }
+
+        /* Product Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 35px;
+        }
+
+        th, td {
+            border: 1px solid green;
+            padding: 12px;
+        }
+
+        th {
+            background-color: darkgreen;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color:beige;
+        }
+
+        footer {
+            background-color:green;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                gap: 10px;
+            }
+
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+
+            .page {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Green Life Agricultural Shop</h1>
+        <p>Explore Our Agricultural Products</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="page">
+
+        <h2>Our Agricultural Products</h2>
+
+        <div class="product-container">
+
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"
+                    alt="Agricultural Seeds">
+
+                <h3>Seeds</h3>
+                <p>Quality farming seeds.</p>
+                <p>Price: Rs.250</p>
+            </div>
+
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b"
+                    alt="Plant Fertilizer">
+
+                <h3>Fertilizers</h3>
+                <p>Plant nutrition products.</p>
+                <p>Price: Rs.500</p>
+            </div>
+
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95"
+                    alt="Agricultural Crop Care">
+
+                <h3>Crop Care</h3>
+                <p>Crop protection products.</p>
+                <p>Price: Rs.400</p>
+            </div>
+
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1589923188900-85dae523342b"
+                    alt="Gardening Tools">
+
+                <h3>Farm Tools</h3>
+                <p>Useful farming equipment.</p>
+                <p>Price: Rs.700</p>
+            </div>
+
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1464226184884-fa280b87c399"
+                    alt="Fresh Farm Produce">
+
+                <h3>Organic Products</h3>
+                <p>Organic farming supplies.</p>
+                <p>Price: Rs.350</p>
+            </div>
+
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2"
+                    alt="Green Plants">
+
+                <h3>Plant Care</h3>
+                <p>Plant care essentials.</p>
+                <p>Price: Rs.300</p>
+            </div>
+
+        </div>
+
+        <!-- Product Details Table -->
+        <h2 style="margin-top: 40px;">
+            Product Details
+        </h2>
+
+        <table>
+
+            <tr>
+                <th>S.No</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Seeds</td>
+                <td>Farming</td>
+                <td>Rs.250</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Fertilizers</td>
+                <td>Plant Nutrition</td>
+                <td>Rs.500</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Crop Care</td>
+                <td>Crop Protection</td>
+                <td>Rs.400</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Farm Tools</td>
+                <td>Equipment</td>
+                <td>Rs.700</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Organic Products</td>
+                <td>Organic Farming</td>
+                <td>Rs.350</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Plant Care</td>
+                <td>Plant Nutrition</td>
+                <td>Rs.300</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <footer>
+        <p>Copyright © 2026 Green Life Agricultural Shop</p>
+    </footer>
+
+</body>
+</html>
